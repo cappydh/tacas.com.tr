@@ -17,6 +17,7 @@ const Information = () => {
           </div>
           <div className="icons">
             <a
+              className="github"
               href="https://github.com/cappydh"
               target="_blank"
               rel="noopener noreferrer"
@@ -26,6 +27,7 @@ const Information = () => {
               </IconContext.Provider>
             </a>
             <a
+              className="linkedin"
               href="https://www.linkedin.com/in/ahmeturaloglu/"
               target="_blank"
               rel="noopener noreferrer"
