@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@font-face {
+  font-family: "Raleway-semibold";
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
 
 .footer {
   background-color: #1b242f;
@@ -21,7 +24,6 @@
 .bottomtext {
   font-size: 10pt;
   color: #8f9aa7;
-  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   margin-top: 85px;
   opacity: 0.6;
@@ -30,6 +32,6 @@
 
 .footerhighlight {
   color: #e0186b;
-  font-weight: bold;
+  font-family: "Raleway-SemiBold";
   font-size: 11pt;
 }

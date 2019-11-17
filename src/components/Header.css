@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@font-face {
+  font-family: "Raleway-semibold";
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
 
 .header {
   background-color: #1b242f;
@@ -23,8 +26,7 @@
 .menu-item {
   margin: 0 20px;
   padding: initial;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-family: "Raleway-SemiBold", sans-serif;
   font-size: initial;
   display: inline;
   text-transform: uppercase;

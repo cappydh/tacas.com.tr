@@ -3,31 +3,3 @@
   line-height: 18pt;
   padding: 100px 0 130px 0;
 }
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-  padding: 0 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.contactheader {
-  font-size: 30pt;
-  color: #444649;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-}
-
-.contactheader-bar {
-  margin: 45px 0 100px 0;
-  width: 70px;
-  height: 4px;
-  background: #444649;
-  color: #616161;
-  line-height: 18pt;
-  font-size: 12pt;
-  position: absolute;
-}

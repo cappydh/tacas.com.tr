@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@font-face {
+  font-family: "Raleway-semibold";
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
 
 .app {
   background-color: #252934;
@@ -26,7 +29,7 @@
 
 .highlight {
   color: #e0186b;
-  font-weight: bold;
+  font-family: "Raleway-SemiBold";
 }
 
 .icons {
@@ -38,14 +41,20 @@
 
 .icons.github:hover {
   color: #e0186b;
+  transform: scale(1.2);
 }
 
 .icons.linkedin:hover {
   color: #0778b3;
+  transform: scale(1.2);
 }
 
 .info {
   color: white;
+}
+
+.button-text {
+  font-family: "Raleway";
 }
 
 .button.page-link {
@@ -53,7 +62,6 @@
   border: solid white 2px;
   padding: 12px 50px 12px 20px;
   font-size: 16pt;
-  font-family: "Raleway", sans-serif;
   text-align: center;
   line-height: 18pt;
   cursor: pointer;

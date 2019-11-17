@@ -16,7 +16,7 @@ const Header = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          duration={500}
+          duration={400}
           onSetActive={to => handleSetActive(to)}
         >
           home
@@ -27,7 +27,7 @@ const Header = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          duration={500}
+          duration={400}
           onSetActive={to => handleSetActive(to)}
         >
           about
@@ -38,7 +38,7 @@ const Header = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          duration={500}
+          duration={400}
           onSetActive={to => handleSetActive(to)}
         >
           contact
