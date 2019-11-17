@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+.footer {
+  background-color: #1b242f;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+}
+
+.iconarrow {
+  margin-top: 20px;
+  background-color: #e0186b;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.bottomtext {
+  font-size: 10pt;
+  color: #8f9aa7;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  margin-top: 85px;
+  opacity: 0.6;
+  position: absolute;
+}
+
+.footerhighlight {
+  color: #e0186b;
+  font-weight: bold;
+  font-size: 11pt;
+}
