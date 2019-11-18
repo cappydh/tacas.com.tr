@@ -4,9 +4,7 @@ import { Link } from "react-scroll";
 import "./Header.css";
 
 const Header = () => {
-  const handleSetActive = to => {
-    console.log(to);
-  };
+  const handleSetActive = to => {};
   return (
     <div className="header">
       <div className="menu">
