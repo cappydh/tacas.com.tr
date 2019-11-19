@@ -11,7 +11,8 @@ export default class extends React.Component {
     name: "",
     email: "",
     animateHeader: "",
-    isOpen: false
+    isOpen: false,
+    isError: false
   };
 
   handleChangeBody(event) {
@@ -27,8 +28,7 @@ export default class extends React.Component {
   }
 
   handleSubmit(event) {
-    //const templateId = "template_fguavxeR";
-    const templateId = "ttes";
+    const templateId = "template_fguavxeR";
     this.sendFeedback(templateId, {
       message_html: this.state.mailBody,
       from_name: this.state.name,
@@ -40,18 +40,20 @@ export default class extends React.Component {
     window.emailjs
       .send("gmail", templateId, variables)
       .then(res => {
-        this.setState({ mailBody: "", name: "", email: "", isOpen: true });
-        this.renderMailRespone();
+        this.setState({
+          mailBody: "",
+          name: "",
+          email: "",
+          isOpen: true,
+          isError: false
+        });
       })
-      .catch(
-        err => this.renderMailRespone(err),
-        this.setState({ isOpen: true })
-      );
+      .catch(err => this.setState({ isOpen: true, isError: true }));
   };
 
-  renderMailRespone(mailResponse) {
+  renderMailRespone() {
     if (this.state.isOpen) {
-      if (mailResponse) {
+      if (this.state.isError) {
         return (
           <div className="mail-response-fail">
             There was an error. Please try again later!
