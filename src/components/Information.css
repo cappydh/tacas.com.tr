@@ -3,6 +3,20 @@
   src: url("../fonts/Raleway-SemiBold.ttf");
 }
 
+@media only screen and (max-width: 768px) {
+  .text {
+    font-size: 16pt !important;
+    line-height: 18pt !important;
+  }
+  .icons {
+    height: 2em !important;
+    padding-right: 0 !important;
+  }
+  .button.page-link {
+    font-size: 12pt !important;
+  }
+}
+
 .app {
   background-color: #252934;
   width: 100%;

@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="footer">
       <div className="iconarrow" onClick={scrollToTop}>
         <IconContext.Provider value={{ size: "3em", color: "white" }}>
-          <FaAngleDoubleUp className="github huge icon" />
+          <FaAngleDoubleUp className="arrow-icon" />
         </IconContext.Provider>
       </div>
       <div className="bottomtext">

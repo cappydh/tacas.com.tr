@@ -7,6 +7,71 @@
   src: url("../fonts/Raleway-Bold.ttf");
 }
 
+@media only screen and (max-width: 768px) {
+  .qualities {
+    flex-direction: column !important;
+    font-size: 18pt !important;
+  }
+  .qualities-row {
+    padding-bottom: 15px !important;
+  }
+  .quality {
+    padding: 0 12px 0 12px !important;
+    max-width: 240px !important;
+  }
+  .quality-image {
+    font-size: 25pt !important;
+    padding-top: 15px !important;
+  }
+  .quality-header {
+    font-size: 12pt !important;
+  }
+  .quality-text {
+    font-size: 10pt !important;
+  }
+  .circle {
+    width: 65px !important;
+    height: 65px !important;
+    border-radius: 100% !important;
+  }
+  .author {
+    flex-direction: column !important;
+  }
+  .author-detail {
+    max-width: 90% !important;
+    width: 450px !important;
+    height: 250px !important;
+    border-radius: 125px !important;
+    padding: 0 !important;
+  }
+  .author-image {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 100px !important;
+  }
+  .skills {
+    padding-top: 150px !important;
+    width: calc(100% - 15px) !important;
+    max-width: 90% !important;
+  }
+  .skill {
+    height: 25px !important;
+    font-size: 9pt !important;
+    margin-bottom: 20px !important;
+    line-height: 25px !important;
+    max-width: 100% !important;
+  }
+  .tag {
+    width: 90px !important;
+  }
+  .percentage {
+    display: none !important;
+  }
+  .about {
+    padding-bottom: 0px !important;
+  }
+}
+
 .about {
   line-height: 18pt;
   padding: 100px 0 130px 0;
@@ -55,8 +120,7 @@
   align-items: center;
   text-align: center;
   position: relative;
-  padding: 110px 10px 0 10px;
-  display: flex;
+  padding: 90px 10px 0 10px;
   margin-right: auto;
   margin-left: auto;
 }
