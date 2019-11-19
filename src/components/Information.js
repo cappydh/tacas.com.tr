@@ -39,7 +39,7 @@ const Information = () => {
           </div>
           <Link to="about" spy={true} smooth={true} duration={500}>
             <div className="button page-link">
-              <span className="button-text">View my work</span>
+              <span className="button-text">View information</span>
               <FaArrowRight className="arrowicon" />
             </div>
           </Link>
