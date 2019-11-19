@@ -15,23 +15,36 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="contact">
-      <VisibilitySensor onChange={onChangeHeader}>
-        <div className="container">
-          <div
-            className={"section-header" + " " + animateHeader}
-            style={{ color: "white" }}
-          >
-            contact
+    <React.Fragment>
+      <svg
+        id="bigTriangleColor"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        width="100%"
+        height="100"
+        viewBox="0 0 100 102"
+        preserveAspectRatio="none"
+      >
+        <path d="M0 0 L50 100 L100 0 Z" />
+      </svg>
+      <div id="contact" className="contact">
+        <VisibilitySensor onChange={onChangeHeader}>
+          <div className="container">
+            <div
+              className={"section-header" + " " + animateHeader}
+              style={{ color: "white" }}
+            >
+              contact
+            </div>
+            <div
+              className={"section-header-bar" + " " + animateHeader}
+              style={{ animationDelay: "0.4s", backgroundColor: "white" }}
+            />
           </div>
-          <div
-            className={"section-header-bar" + " " + animateHeader}
-            style={{ animationDelay: "0.4s", backgroundColor: "white" }}
-          />
-        </div>
-      </VisibilitySensor>
-      <MailForm />
-    </div>
+        </VisibilitySensor>
+        <MailForm />
+      </div>
+    </React.Fragment>
   );
 };
 

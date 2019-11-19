@@ -47,7 +47,6 @@ export default class extends React.Component {
   }
 
   onChangeMailHeader = isVisible => {
-    console.log(isVisible);
     if (isVisible) {
       this.setState({ animateHeader: "animated pop-in" });
     }
