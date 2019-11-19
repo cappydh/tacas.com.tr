@@ -8,9 +8,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 !important;
+  }
   .qualities {
     flex-direction: column !important;
     font-size: 18pt !important;
+    padding: 90px 0 0 0 !important;
   }
   .qualities-row {
     padding-bottom: 15px !important;
