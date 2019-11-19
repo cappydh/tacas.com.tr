@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { MdPhonelink } from "react-icons/md";
 import { IoIosRocket, IoIosSpeedometer, IoMdFlower } from "react-icons/io";
-import image from "../images/12661813_10208681337220319_8686838764303237944_n.jpg";
+import image from "../images/20833464.png";
 
 import VisibilitySensor from "react-visibility-sensor";
 
