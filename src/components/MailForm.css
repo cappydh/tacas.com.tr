@@ -11,6 +11,12 @@
   .mail-form-body {
     width: 70% !important;
   }
+  .mail-response-fail {
+    width: 70% !important;
+  }
+  .mmail-response-success {
+    width: 70% !important;
+  }
 }
 
 .mail-form {
@@ -108,17 +114,6 @@ textarea:focus {
   border: 1px solid #157c59;
 }
 
-.close-button {
-  position: relative;
-  font-size: 12pt;
-  font-weight: 600;
-  padding: 5px 15px;
-  right: 30%;
-  cursor: pointer;
-  display: inline-block;
-  position: absolute;
-}
-
 .mail-response-fail {
   background-color: #d23148;
   color: #76112b;
@@ -129,6 +124,17 @@ textarea:focus {
   padding: 5px 15px 5px 15px;
   margin-bottom: 10px;
   border: 1px solid #76112b;
+}
+
+.close-button {
+  position: relative;
+  font-size: 12pt;
+  font-weight: 600;
+  padding: 5px 15px;
+  right: 30%;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
 }
 
 .animated.pop-in {
