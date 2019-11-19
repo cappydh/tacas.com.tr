@@ -1,12 +1,18 @@
 /* eslint-disable no-useless-concat */
 import React from "react";
-
+import { MdClose } from "react-icons/md";
 import VisibilitySensor from "react-visibility-sensor";
 
 import "./MailForm.css";
 
 export default class extends React.Component {
-  state = { mailBody: "", name: "", email: "", animateHeader: "" };
+  state = {
+    mailBody: "",
+    name: "",
+    email: "",
+    animateHeader: "",
+    isOpen: false
+  };
 
   handleChangeBody(event) {
     this.setState({ mailBody: event.target.value });
@@ -21,8 +27,8 @@ export default class extends React.Component {
   }
 
   handleSubmit(event) {
-    const templateId = "template_fguavxeR";
-
+    //const templateId = "template_fguavxeR";
+    const templateId = "ttes";
     this.sendFeedback(templateId, {
       message_html: this.state.mailBody,
       from_name: this.state.name,
@@ -30,20 +36,42 @@ export default class extends React.Component {
     });
   }
 
-  sendFeedback(templateId, variables) {
+  sendFeedback = async (templateId, variables) => {
     window.emailjs
       .send("gmail", templateId, variables)
       .then(res => {
-        console.log("Email successfully sent!");
-        this.setState({ mailBody: "", name: "", email: "" });
+        this.setState({ mailBody: "", name: "", email: "", isOpen: true });
+        this.renderMailRespone();
       })
-      // Handle errors here however you like, or use a React error boundary
-      .catch(err =>
-        console.error(
-          "Oh well, you failed. Here some thoughts on the error that occured:",
-          err
-        )
+      .catch(
+        err => this.renderMailRespone(err),
+        this.setState({ isOpen: true })
       );
+  };
+
+  renderMailRespone(mailResponse) {
+    if (this.state.isOpen) {
+      if (mailResponse) {
+        return (
+          <div className="mail-response-fail">
+            There was an error. Please try again later!
+            <MdClose
+              className="close-button"
+              onClick={() => this.setState({ isOpen: false })}
+            />
+          </div>
+        );
+      }
+      return (
+        <div className="mail-response-success">
+          Your message was sent successfully. Thanks!
+          <MdClose
+            className="close-button"
+            onClick={() => this.setState({ isOpen: false })}
+          />
+        </div>
+      );
+    }
   }
 
   onChangeMailHeader = isVisible => {
@@ -78,6 +106,7 @@ export default class extends React.Component {
           required
           value={this.state.mailBody}
         />
+        {this.renderMailRespone()}
         <input
           className="mail-form-button"
           type="button"

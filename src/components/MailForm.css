@@ -96,6 +96,41 @@ textarea:focus {
   border-color: #04c2c9;
 }
 
+.mail-response-success {
+  background-color: #04c886;
+  color: #157051;
+  width: 40%;
+  font-size: 10pt;
+  font-family: "Raleway";
+  font-weight: 600;
+  padding: 5px 15px 5px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #157c59;
+}
+
+.close-button {
+  position: relative;
+  font-size: 12pt;
+  font-weight: 600;
+  padding: 5px 15px;
+  right: 30%;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+}
+
+.mail-response-fail {
+  background-color: #d23148;
+  color: #76112b;
+  width: 40%;
+  font-size: 10pt;
+  font-family: "Raleway";
+  font-weight: 600;
+  padding: 5px 15px 5px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #76112b;
+}
+
 .animated.pop-in {
   -webkit-font-smoothing: antialiased;
   animation: popIn 1s ease both;
