@@ -14,8 +14,12 @@
   .mail-response-fail {
     width: 70% !important;
   }
-  .mmail-response-success {
+  .mail-response-success {
     width: 70% !important;
+  }
+  .close-button {
+    right: 8.5% !important;
+    top: 82% !important;
   }
 }
 

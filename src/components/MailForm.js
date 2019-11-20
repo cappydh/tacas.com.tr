@@ -11,7 +11,7 @@ export default class extends React.Component {
     name: "",
     email: "",
     animateHeader: "",
-    isOpen: false,
+    isOpen: true,
     isError: false
   };
 
