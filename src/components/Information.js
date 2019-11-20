@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { IconContext } from "react-icons";
-import { FaGithub, FaLinkedin, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
+import background from "../images/bg4.jpg";
 import "./Information.css";
 
 const Information = () => {
@@ -11,35 +11,17 @@ const Information = () => {
       <div className="center">
         <div>
           <div className="text">
-            Hello, I'm <span className="highlight">Ahmet Uraloglu</span>.
+            {/* //Our goal is providing holistic consulting, technology and education services */}
+            Our goal is; <br /> <span>providing</span>{" "}
+            <span className="highlight">holistic consulting</span>,
             <br />
-            <span>I'm a front-end web developer.</span>
-          </div>
-          <div className="icons">
-            <a
-              className="github"
-              href="https://github.com/cappydh"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IconContext.Provider value={{ size: "3em" }}>
-                <FaGithub className="github huge icon icons" />
-              </IconContext.Provider>
-            </a>
-            <a
-              className="linkedin"
-              href="https://www.linkedin.com/in/ahmeturaloglu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IconContext.Provider value={{ size: "3em" }}>
-                <FaLinkedin className="linkedin huge icon icons" />
-              </IconContext.Provider>
-            </a>
+            <span className="highlight">technology</span>,
+            <br />
+            <span className="highlight">education services</span>.
           </div>
           <Link to="about" spy={true} smooth={true} duration={500}>
             <div className="button page-link">
-              <span className="button-text">View information</span>
+              <span className="button-text">discover now</span>
               <FaArrowRight className="arrowicon" />
             </div>
           </Link>

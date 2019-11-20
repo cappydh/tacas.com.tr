@@ -21,12 +21,17 @@
 }
 
 .app {
-  background-color: #252934;
+  /* background-color: #fdfffc; */
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(../images/bg4.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .center {
   height: 100vh;
@@ -39,35 +44,18 @@
 .text {
   font-size: 32pt;
   line-height: 36pt;
-  color: white;
+  color: #00171f;
   font-family: "Raleway", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .highlight {
-  color: #e0186b;
+  color: #e63946;
   font-family: "Raleway-SemiBold";
 }
 
-.icons {
-  color: white;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  transition: all 0.3s ease;
-}
-
-.icons.github:hover {
-  color: #e0186b;
-  transform: scale(1.2);
-}
-
-.icons.linkedin:hover {
-  color: #0778b3;
-  transform: scale(1.2);
-}
-
 .info {
-  color: white;
+  color: #00171f;
 }
 
 .button-text {
@@ -75,8 +63,8 @@
 }
 
 .button.page-link {
-  color: white;
-  border: solid white 2px;
+  color: #00171f;
+  border: solid #00171f 2px;
   padding: 12px 50px 12px 20px;
   font-size: 16pt;
   text-align: center;
@@ -86,15 +74,16 @@
   display: inline-block;
   position: relative;
   transition: all 0.5s ease;
+  text-transform: uppercase;
 }
 
 .button.page-link:hover {
-  background-color: #04c2c9;
-  border-color: #04c2c9;
+  background-color: #e63946;
+  border-color: #e63946;
 }
 
 .arrowicon {
-  color: white;
+  color: #011627;
   position: absolute;
   right: 13px;
   top: 15px;
