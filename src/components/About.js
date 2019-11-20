@@ -66,7 +66,7 @@ const About = () => {
               <div className={"quality-header" + " " + animateText}>
                 <div className="quality-header-text">Responsive</div>
                 <div className="quality-text">
-                  My layouts will work on any device, big or small.
+                  My layouts is working on any device, big or small.
                 </div>
               </div>
             </VisibilitySensor>
@@ -106,8 +106,8 @@ const About = () => {
             >
               <div className="quality-header-text">Fast</div>
               <div className="quality-text">
-                Nobody loves slow and laggy stuff. So I am doing fast loading
-                websites.
+                Nobody loves slow and laggy stuff. That's why I am doing fast
+                loading websites.
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@ const About = () => {
             >
               <div className="quality-header-text">Aesthetic</div>
               <div className="quality-text">
-                My work will not only be fast also it will be aesthetic and user
+                My work is not only be fast also it is aesthetic and user
                 friendly.
               </div>
             </div>
@@ -140,7 +140,12 @@ const About = () => {
             <div className="author-header-text">Who am I?</div>
             <div className="author-text">
               I'm a Front-End Developer for{" "}
-              <a className="tac-link" href="https://www.tacas.com.tr/">
+              <a
+                className="tac-link"
+                href="https://www.tacas.com.tr/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 TAC
               </a>{" "}
               in Istanbul, TURKEY. <br />I am very passionate about animations
