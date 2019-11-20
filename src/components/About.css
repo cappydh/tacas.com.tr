@@ -57,7 +57,7 @@
     font-size: 10pt !important;
   }
   .skills {
-    padding-top: 150px !important;
+    margin-top: 150px !important;
     width: calc(100% - 15px) !important;
     max-width: 90% !important;
   }
