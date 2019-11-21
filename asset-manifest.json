@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/tacas.com.tr/static/css/main.e8171692.chunk.css",
-    "main.js": "/tacas.com.tr/static/js/main.46de9561.chunk.js",
-    "main.js.map": "/tacas.com.tr/static/js/main.46de9561.chunk.js.map",
+    "main.css": "/tacas.com.tr/static/css/main.b7eed955.chunk.css",
+    "main.js": "/tacas.com.tr/static/js/main.7f6ca277.chunk.js",
+    "main.js.map": "/tacas.com.tr/static/js/main.7f6ca277.chunk.js.map",
     "runtime-main.js": "/tacas.com.tr/static/js/runtime-main.d8fca28c.js",
     "runtime-main.js.map": "/tacas.com.tr/static/js/runtime-main.d8fca28c.js.map",
-    "static/js/2.5b13d7d4.chunk.js": "/tacas.com.tr/static/js/2.5b13d7d4.chunk.js",
-    "static/js/2.5b13d7d4.chunk.js.map": "/tacas.com.tr/static/js/2.5b13d7d4.chunk.js.map",
+    "static/js/2.fce53b10.chunk.js": "/tacas.com.tr/static/js/2.fce53b10.chunk.js",
+    "static/js/2.fce53b10.chunk.js.map": "/tacas.com.tr/static/js/2.fce53b10.chunk.js.map",
     "index.html": "/tacas.com.tr/index.html",
-    "precache-manifest.d32bb2e0feaa2775d9ee11eb4cd0c6cd.js": "/tacas.com.tr/precache-manifest.d32bb2e0feaa2775d9ee11eb4cd0c6cd.js",
+    "precache-manifest.76d2b274686d0c41e160c1b16cbef308.js": "/tacas.com.tr/precache-manifest.76d2b274686d0c41e160c1b16cbef308.js",
     "service-worker.js": "/tacas.com.tr/service-worker.js",
-    "static/css/main.e8171692.chunk.css.map": "/tacas.com.tr/static/css/main.e8171692.chunk.css.map",
+    "static/css/main.b7eed955.chunk.css.map": "/tacas.com.tr/static/css/main.b7eed955.chunk.css.map",
     "static/media/About.css": "/tacas.com.tr/static/media/Raleway-Bold.575e4317.ttf",
     "static/media/index.css": "/tacas.com.tr/static/media/Raleway-Regular.580d0778.ttf",
     "static/media/Footer.css": "/tacas.com.tr/static/media/Raleway-SemiBold.17ba6410.ttf",
     "static/media/assets.png": "/tacas.com.tr/static/media/assets.28140746.png",
     "static/media/benefit.png": "/tacas.com.tr/static/media/benefit.2e956b33.png",
     "static/media/Information.css": "/tacas.com.tr/static/media/bg4.a8f941b3.jpg",
+    "static/media/Products.css": "/tacas.com.tr/static/media/loe2.1b6c1f91.png",
     "static/media/expert.png": "/tacas.com.tr/static/media/expert.0ea94633.png",
-    "static/media/goldenhorn_banner.png": "/tacas.com.tr/static/media/goldenhorn_banner.aae09f8e.png",
     "static/media/tac_egitim.jpg": "/tacas.com.tr/static/media/tac_egitim.2d01a941.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d8fca28c.js",
-    "static/js/2.5b13d7d4.chunk.js",
-    "static/css/main.e8171692.chunk.css",
-    "static/js/main.46de9561.chunk.js"
+    "static/js/2.fce53b10.chunk.js",
+    "static/css/main.b7eed955.chunk.css",
+    "static/js/main.7f6ca277.chunk.js"
   ]
 }
