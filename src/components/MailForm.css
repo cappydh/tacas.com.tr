@@ -38,7 +38,7 @@
 }
 
 .mail-form-header {
-  color: #04c2c9;
+  color: #ff686b;
   font-family: "Raleway-Semibold";
   font-size: 14pt;
 }
@@ -104,8 +104,8 @@ textarea:focus {
 }
 
 .mail-form-button:hover {
-  background-color: #04c2c9;
-  border-color: #04c2c9;
+  background-color: #ff686b;
+  border-color: #ff686b;
 }
 
 .mail-response-success {

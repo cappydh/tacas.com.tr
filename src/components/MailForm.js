@@ -86,7 +86,7 @@ export default class extends React.Component {
       <form className={"mail-form" + " " + this.state.animateHeader}>
         <VisibilitySensor onChange={e => this.onChangeMailHeader(e)}>
           <span className="mail-form-header">
-            Have a question or want to contact me?
+            Have a question or want to contact us?
           </span>
         </VisibilitySensor>
         <input

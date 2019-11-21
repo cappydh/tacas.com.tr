@@ -1,9 +1,12 @@
 /* eslint-disable no-useless-concat */
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import { MdPhonelink } from "react-icons/md";
-import { IoIosRocket, IoIosSpeedometer, IoMdFlower } from "react-icons/io";
-import image from "../images/20833464.png";
+
+import goldenhorn_banner from "../images/goldenhorn_banner.png";
+import tac_egitim from "../images/tac_egitim.jpg";
+import benefit from "../images/benefit.png";
+import expert from "../images/expert.png";
+import assets from "../images/assets.png";
 
 import VisibilitySensor from "react-visibility-sensor";
 
@@ -13,8 +16,12 @@ const About = () => {
   const [animateHeader, setAnimateHeader] = useState("");
   const [animateCircles, setAnimateCircles] = useState("");
   const [animateText, setAnimateText] = useState("");
-  const [animateAuthor, setAnimateAuthor] = useState("");
-  const [animateSkills, setAnimateSkills] = useState("");
+  const [animateInfoTop, setAnimateInfoTop] = useState("");
+  const [animateInfoMiddle, setAnimateInfoMiddle] = useState("");
+  const [animateInfoBottom, setAnimateInfoBottom] = useState("");
+  const [animateContentsTop, setAnimateContentsTop] = useState("");
+  const [animateContentsMiddle, setAnimateContentsMiddle] = useState("");
+  const [animateContentsBottom, setAnimateContentsBottom] = useState("");
   const [animateBar, setAnimateBar] = useState("");
 
   const onChangeHeader = isVisible => {
@@ -35,10 +42,26 @@ const About = () => {
     }
   };
 
-  const onChangeAuthor = isVisible => {
+  const onChangeArticleTop = isVisible => {
     if (isVisible) {
-      setAnimateAuthor("animated slideIn-left");
-      setAnimateSkills("animated slideIn-right");
+      setAnimateInfoTop("animated slideIn-left");
+      setAnimateContentsTop("animated slideIn-right");
+      setAnimateBar("animated bar");
+    }
+  };
+
+  const onChangeArticleMiddle = isVisible => {
+    if (isVisible) {
+      setAnimateInfoMiddle("animated slideIn-right");
+      setAnimateContentsMiddle("animated slideIn-left");
+      setAnimateBar("animated bar");
+    }
+  };
+
+  const onChangeArticleBottom = isVisible => {
+    if (isVisible) {
+      setAnimateInfoBottom("animated slideIn-left");
+      setAnimateContentsBottom("animated slideIn-right");
       setAnimateBar("animated bar");
     }
   };
@@ -59,14 +82,19 @@ const About = () => {
           <div className="quality">
             <VisibilitySensor onChange={onChangeQualityImage}>
               <div className={"circle" + " " + animateCircles}>
-                <MdPhonelink className="quality-image" />
+                <img src={benefit} alt="benefit" className="quality-image" />
               </div>
             </VisibilitySensor>
             <VisibilitySensor onChange={onChangeQualityText}>
               <div className={"quality-header" + " " + animateText}>
-                <div className="quality-header-text">Responsive</div>
+                <div className="quality-header-text">
+                  Benefit Realization Approach
+                </div>
                 <div className="quality-text">
-                  My layouts is working on any device, big or small.
+                  Our implementation approach is guided by practical
+                  implementation and benefit realization. We have an outstanding
+                  track record of projects implemented with leading corporations
+                  in Turkey and GCC region.
                 </div>
               </div>
             </VisibilitySensor>
@@ -77,16 +105,19 @@ const About = () => {
               className={"circle" + " " + animateCircles}
               style={{ animationDelay: "0.2s" }}
             >
-              <IoIosRocket className="quality-image" />
+              <img src={expert} alt="expert" className="quality-image" />
             </div>
             <div
               className={"quality-header" + " " + animateText}
               style={{ animationDelay: "0.2s" }}
             >
-              <div className="quality-header-text">Dynamic</div>
+              <div className="quality-header-text">Expert Team</div>
               <div className="quality-text">
-                I am good with dynamic design. And I like pushing myself to
-                learn new stuff.
+                Proved and certified expert in the governance and management of
+                IT. Our expertise brings significant level of hands-on
+                experience from different industries. We invest remarkable
+                amounts to build up our capabilities and to ensure they are
+                up-to-date and market relevant.
               </div>
             </div>
           </div>
@@ -97,17 +128,20 @@ const About = () => {
               className={"circle" + " " + animateCircles}
               style={{ animationDelay: "0.4s" }}
             >
-              <IoIosSpeedometer className="quality-image" />
+              <img src={assets} alt="assets" className="quality-image" />
             </div>
 
             <div
               className={"quality-header" + " " + animateText}
               style={{ animationDelay: "0.4s" }}
             >
-              <div className="quality-header-text">Fast</div>
+              <div className="quality-header-text">Assets</div>
               <div className="quality-text">
-                Nobody loves slow and laggy stuff. That's why I am doing fast
-                loading websites.
+                Number of assets to execute against proven methodologies and our
+                experience from our clients. Our unique approach and assets
+                enable us to deliver value to our clients in faster, more
+                comprehensive and more cost effective fashion than our
+                competitors.
               </div>
             </div>
           </div>
@@ -116,128 +150,92 @@ const About = () => {
               className={"circle" + " " + animateCircles}
               style={{ animationDelay: "0.6s" }}
             >
-              <IoMdFlower className="quality-image" />
+              <img src={assets} alt="assets" className="quality-image" />
             </div>
 
             <div
               className={"quality-header" + " " + animateText}
               style={{ animationDelay: "0.6s" }}
             >
-              <div className="quality-header-text">Aesthetic</div>
+              <div className="quality-header-text">Assets</div>
               <div className="quality-text">
-                My work is not only be fast also it is aesthetic and user
-                friendly.
+                Number of assets to execute against proven methodologies and our
+                experience from our clients. Our unique approach and assets
+                enable us to deliver value to our clients in faster, more
+                comprehensive and more cost effective fashion than our
+                competitors.
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="author">
-        <div className={"author-detail" + " " + animateAuthor}>
-          <img className="author-image" src={image} alt="author" />
-          <div className={"author-header"} style={{ animationDelay: "1s" }}>
-            <div className="author-header-text">Who am I?</div>
-            <div className="author-text">
-              I'm a Front-End Developer for{" "}
-              <a
-                className="tac-link"
-                href="https://www.tacas.com.tr/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                TAC
-              </a>{" "}
-              in Istanbul, TURKEY. <br />I am very passionate about animations
-              and aesthetic interfaces. <br />{" "}
-              <Link
-                to="contact"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                duration={400}
-                style={{ color: "#04c2c9", cursor: "pointer" }}
-              >
-                Contact me.
-              </Link>
-            </div>
-          </div>
+      <div className="info">
+        <div className={"info-detail" + " " + animateInfoTop}>
+          <img className="info-image" src={tac_egitim} alt="info" />
         </div>
-        <div className={"skills" + " " + animateSkills}>
-          <VisibilitySensor onChange={onChangeAuthor}>
-            <div className="skill">
-              <div
-                className={"skill-bar" + " " + animateBar}
-                style={{ width: "0%" }}
-              >
-                <div className="tag">CSS</div>
-              </div>
-              <span className="percentage">70%</span>
+        <div className={"contents" + " " + animateContentsTop}>
+          <VisibilitySensor onChange={onChangeArticleTop}>
+            <div className="content">
+              <span className="content-title">
+                Who <span className="highlight-title">we</span> are?
+              </span>
+              <br />
+              TAC is an innovative consultancy and solution company, specialized
+              in the best practice framework like COBIT, ITIL, PMBOK, Prince2,
+              Agile, CMMI, eTOM, Togaf, Stage&Gate, BPMN and related solutions.
+              Originally founded in 1999 as a company with limited liability we
+              are represented by 50 employees at two locations Istanbul, Turkey.
             </div>
           </VisibilitySensor>
-          <div className="skill">
-            <div
-              className={"skill-bar" + " " + animateBar}
-              style={{ width: "0%" }}
-            >
-              <div className="tag">HTML</div>
+        </div>
+      </div>
+      <div className="info">
+        <div className={"contents" + " " + animateContentsMiddle}>
+          <VisibilitySensor onChange={onChangeArticleMiddle}>
+            <div className="content">
+              <span className="content-title">
+                Our <span className="highlight-title">Mission</span>
+              </span>
+              <br />
+              We are management consultants with international experience. We
+              emphasize on objectivity, independence and practical relevance in
+              all of our thoughts and activities. Our goal is providing holistic
+              consulting, technology and education services. In cooperation with
+              partners and system providers we deliver key-turn projects as
+              single source solution competence. In addition to analysis and
+              conception we focus on execution and realization. We are guided by
+              the rule of benefits optimization for our clients. People and
+              their Capabilities are the central elements of our business
+              activities.
             </div>
-            <span className="percentage">80%</span>
-          </div>
-          <div className="skill">
-            <div
-              className={"skill-bar" + " " + animateBar}
-              style={{ width: "0%" }}
-            >
-              <div className="tag">React</div>
+          </VisibilitySensor>
+        </div>
+        <div className={"info-detail" + " " + animateInfoMiddle}>
+          <img className="info-image" src={tac_egitim} alt="info" />
+        </div>
+      </div>
+      <div className="info">
+        <div className={"info-detail" + " " + animateInfoBottom}>
+          <img className="info-image" src={tac_egitim} alt="info" />
+        </div>
+        <div className={"contents" + " " + animateContentsBottom}>
+          <VisibilitySensor onChange={onChangeArticleBottom}>
+            <div className="content">
+              <span className="content-title">
+                Our <span className="highlight-title">Services</span>
+              </span>
+              <br />
+              Our Services are shaped based on de-facto requirements for
+              successful governance and management in times of global
+              competition and fast changes. They are based upon profound
+              experience of our consultants we do not consult on topics, that we
+              have not realized in own management responsibility ensure
+              identification with goals and results by integrating the
+              management team in the consulting engagement aim on short, mid and
+              long term success of enterprise.
             </div>
-            <span className="percentage">55%</span>
-          </div>
-          <div className="skill">
-            <div
-              className={"skill-bar" + " " + animateBar}
-              style={{ width: "0%" }}
-            >
-              <div className="tag">JavaScript</div>
-            </div>
-            <span className="percentage">75%</span>
-          </div>
-          <div className="skill">
-            <div
-              className={"skill-bar" + " " + animateBar}
-              style={{ width: "0%" }}
-            >
-              <div className="tag">jQuery</div>
-            </div>
-            <span className="percentage">60%</span>
-          </div>
-          <div className="skill">
-            <div
-              className={"skill-bar" + " " + animateBar}
-              style={{ width: "0%" }}
-            >
-              <div className="tag">TypeScript</div>
-            </div>
-            <span className="percentage">30%</span>
-          </div>
-          <div className="skill">
-            <div
-              className={"skill-bar" + " " + animateBar}
-              style={{ width: "0%" }}
-            >
-              <div className="tag">Git</div>
-            </div>
-            <span className="percentage">40%</span>
-          </div>
-          <div className="skill">
-            <div
-              className={"skill-bar" + " " + animateBar}
-              style={{ width: "0%" }}
-            >
-              <div className="tag">UI Design</div>
-            </div>
-            <span className="percentage">50%</span>
-          </div>
+          </VisibilitySensor>
         </div>
       </div>
     </div>

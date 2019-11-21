@@ -8,15 +8,13 @@
     height: 110vh !important;
   }
   .text {
-    font-size: 16pt !important;
+    font-size: 14pt !important;
     line-height: 18pt !important;
   }
-  .icons {
-    height: 2em !important;
-    padding-right: 0 !important;
-  }
+
   .button.page-link {
-    font-size: 12pt !important;
+    font-size: 11pt !important;
+    padding: 10px 45px 10px 15px !important;
   }
 }
 
@@ -80,6 +78,7 @@
 .button.page-link:hover {
   background-color: #e63946;
   border-color: #e63946;
+  color: white;
 }
 
 .arrowicon {
@@ -93,4 +92,5 @@
 
 .button.page-link:hover > .arrowicon {
   transform: rotateZ(90deg);
+  color: white;
 }

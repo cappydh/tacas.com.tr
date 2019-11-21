@@ -14,7 +14,6 @@
 
 .iconarrow {
   margin-top: -25px;
-  background-color: #e0186b;
   height: 55px;
   width: 55px;
   cursor: pointer;
@@ -31,7 +30,7 @@
 }
 
 .footerhighlight {
-  color: #e0186b;
+  color: #ff686b;
   font-family: "Raleway-SemiBold";
   font-size: 11pt;
 }

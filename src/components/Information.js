@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-scroll";
 import { FaArrowRight } from "react-icons/fa";
 
-import background from "../images/bg4.jpg";
 import "./Information.css";
 
 const Information = () => {
@@ -11,7 +10,6 @@ const Information = () => {
       <div className="center">
         <div>
           <div className="text">
-            {/* //Our goal is providing holistic consulting, technology and education services */}
             Our goal is; <br /> <span>providing</span>{" "}
             <span className="highlight">holistic consulting</span>,
             <br />

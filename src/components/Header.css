@@ -7,21 +7,31 @@ body {
   margin: 0;
   font-family: "Raleway-semibold", sans-serif;
   background-color: #f4f4f4;
-}
-
-a {
-  color: #000;
+  font-size: 12pt;
 }
 
 /* header */
 
 .header {
-  background-color: #011627;
-  border-bottom: 3px solid #e63946;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   z-index: 3;
+  padding-top: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.scrolled {
+  background-color: white;
+  /* border-bottom: 3px solid #118a93; */
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.6s ease;
+  color: black !important;
+  padding-top: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.scrolled li a {
+  color: black !important;
 }
 
 .header ul {
@@ -38,12 +48,20 @@ a {
   color: white;
   text-transform: uppercase;
   font-family: "Raleway-SemiBold", sans-serif;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  color: #ff686b;
+  /* color: #ff686b; */
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.scrolled li a:hover,
+.scrolled .menu-btn:hover {
+  color: #ff686b !important;
   cursor: pointer;
   font-weight: bold;
 }
@@ -53,7 +71,8 @@ a {
   position: absolute;
   font-size: 2em;
   text-decoration: none;
-  height: 58px;
+  height: 30px;
+  padding-top: 6px;
   cursor: pointer;
 }
 
@@ -63,6 +82,11 @@ a {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+  background: white;
+}
+
+.header .menu li a {
+  color: black;
 }
 
 /* menu icon */
@@ -88,6 +112,26 @@ a {
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.scrolled .menu-icon .navicon {
+  background: black;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.scrolled .menu-icon .navicon:before,
+.scrolled .menu-icon .navicon:after {
+  background: black;
   content: "";
   display: block;
   height: 100%;
@@ -140,10 +184,14 @@ a {
   .header li a {
     padding: 20px 30px;
   }
+  .header .menu li a {
+    color: white;
+  }
   .header .menu {
     clear: none;
     float: right;
     max-height: none;
+    background: transparent;
   }
   .header .menu-icon {
     display: none;
