@@ -121,8 +121,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="qualities-row">
+
           <div className="quality">
             <div
               className={"circle" + " " + animateCircles}
@@ -134,28 +133,6 @@ const About = () => {
             <div
               className={"quality-header" + " " + animateText}
               style={{ animationDelay: "0.4s" }}
-            >
-              <div className="quality-header-text">Assets</div>
-              <div className="quality-text">
-                Number of assets to execute against proven methodologies and our
-                experience from our clients. Our unique approach and assets
-                enable us to deliver value to our clients in faster, more
-                comprehensive and more cost effective fashion than our
-                competitors.
-              </div>
-            </div>
-          </div>
-          <div className="quality">
-            <div
-              className={"circle" + " " + animateCircles}
-              style={{ animationDelay: "0.6s" }}
-            >
-              <img src={assets} alt="assets" className="quality-image" />
-            </div>
-
-            <div
-              className={"quality-header" + " " + animateText}
-              style={{ animationDelay: "0.6s" }}
             >
               <div className="quality-header-text">Assets</div>
               <div className="quality-text">
