@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 import { FaArrowRight } from "react-icons/fa";
 
 import "./Information.css";
@@ -17,12 +17,12 @@ const Information = () => {
             <br />
             <span className="highlight">education services</span>.
           </div>
-          <Link to="about" spy={true} smooth={true} duration={500}>
+          <NavLink to="#about" smooth={true}>
             <div className="button page-link">
               <span className="button-text">discover now</span>
               <FaArrowRight className="arrowicon" />
             </div>
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>

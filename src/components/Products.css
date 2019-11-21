@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Raleway-semibold";
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
+
+.products {
+  line-height: 18pt;
+  padding: 100px 0 130px 0;
+  margin-bottom: 450px;
+  background-color: #f5f5f5;
+}
+
+.section-header {
+  line-height: 18pt;
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 120px 10px 0 10px;
+  visibility: hidden;
+}
+
+.animated.slideUp {
+  -webkit-font-smoothing: antialiased;
+  animation: slideUpProducts 0.75s ease both;
+  visibility: visible !important;
+}
+
+.product {
+  width: 400px;
+  height: 300px;
+  flex-direction: row;
+  position: relative;
+}
+
+.card {
+  width: 390px;
+  height: 240px;
+  max-width: 100%;
+  width: calc(50vw - 8px);
+  cursor: pointer;
+  transition: opacity 0.5s;
+  position: absolute;
+  display: none;
+}
+
+.product-text {
+  opacity: 0;
+  position: absolute;
+  display: none;
+  font-size: 16pt;
+  font-family: "Raleway-semibold";
+  text-align: center;
+  top: 0;
+  width: 100%;
+  line-height: 18pt;
+  transition: all 0.3s ease-in;
+}
+
+.product-highlight {
+  font-size: 12pt;
+  color: #e63946;
+  font-family: "Raleway", sans-serif;
+}
+
+.product-button {
+  color: #00171f;
+  border: solid #e63946 2px;
+  padding: 8px 30px 8px 30px;
+  font-size: 13pt;
+  line-height: 18pt;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  z-index: 2;
+  left: calc((400px - 175.58px) / 2);
+  font-family: "Raleway", sans-serif;
+  display: none;
+  transition: all 0.3s ease-in;
+}
+
+.product-button:hover {
+  background-color: #e63946;
+  border-color: #e63946;
+  color: white;
+}
+
+.product-gallery .product:nth-child(1) {
+  background: url("../images/goldenhorn_banner.png") center;
+  /* background-color: #f3ffbd; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fadeIn 0.5s ease backwards;
+}
+
+.product-gallery .product:nth-child(2) {
+  background: url("../images/loe2.png") center;
+  /* background-color: #b2dbbf; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fadeIn 0.5s ease backwards;
+}
+
+.product-gallery .product:nth-child(3) {
+  background: url("../images/conig2.png") center;
+  /* background-color: #70c1b3; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fadeIn 0.5s ease backwards;
+}
+
+.product-gallery .product:hover {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+.product:hover .product-text {
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  animation: slideDown 0.5s ease forwards;
+}
+
+.product:hover .product-button {
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  animation: slideUp 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    background: none center;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(55px);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-55px);
+  }
+}
+
+@keyframes slideUpProducts {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

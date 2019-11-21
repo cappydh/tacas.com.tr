@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 
 import logo from "../images/tacas_new.png";
 import "./Header.css";
@@ -30,86 +30,68 @@ class Header extends React.Component {
     return (
       <>
         <header className={"header" + " " + this.state.headerClass}>
-          <Link
-            to="home"
+          <NavLink
+            to="#home"
             className="logo"
             activeclassName="active"
-            spy={true}
             smooth={true}
-            duration={400}
-            onSetActive={to => this.handleSetActive(to)}
           >
             <img src={logo} className="logo" alt="logo" />
-          </Link>
+          </NavLink>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
           <label className="menu-icon" htmlFor="menu-btn">
             <span className="navicon"></span>
           </label>
           <ul className="menu">
             <li>
-              <Link
-                to="home"
+              <NavLink
+                to="#home"
                 className="menu-item"
                 activeclassName="active"
-                spy={true}
                 smooth={true}
-                duration={400}
-                onSetActive={to => this.handleSetActive(to)}
               >
                 home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                to="about"
+              <NavLink
+                to="#about"
                 className="menu-item"
                 activeclassName="active"
-                spy={true}
                 smooth={true}
-                duration={400}
-                onSetActive={to => this.handleSetActive(to)}
               >
                 about
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                to="products"
+              <NavLink
+                to="#products"
                 className="menu-item"
                 activeclassName="active"
-                spy={true}
                 smooth={true}
-                duration={400}
-                onSetActive={to => this.handleSetActive(to)}
               >
                 products
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                to="services"
+              <NavLink
+                to="#services"
                 className="menu-item"
                 activeclassName="active"
-                spy={true}
                 smooth={true}
-                duration={400}
-                onSetActive={to => this.handleSetActive(to)}
               >
                 services
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                to="contact"
+              <NavLink
+                to="#contact"
                 className="menu-item"
                 activeclassName="active"
-                spy={true}
                 smooth={true}
-                duration={400}
-                onSetActive={to => this.handleSetActive(to)}
               >
                 contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </header>

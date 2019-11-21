@@ -1,14 +1,12 @@
 /* eslint-disable no-useless-concat */
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import VisibilitySensor from "react-visibility-sensor";
 
 import goldenhorn_banner from "../images/goldenhorn_banner.png";
 import tac_egitim from "../images/tac_egitim.jpg";
 import benefit from "../images/benefit.png";
 import expert from "../images/expert.png";
 import assets from "../images/assets.png";
-
-import VisibilitySensor from "react-visibility-sensor";
 
 import "./About.css";
 
