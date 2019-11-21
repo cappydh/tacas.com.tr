@@ -33,7 +33,7 @@ class Header extends React.Component {
           <NavLink
             to="#home"
             className="logo"
-            activeclassName="active"
+            activeclassname="active"
             smooth={true}
           >
             <img src={logo} className="logo" alt="logo" />
@@ -47,7 +47,7 @@ class Header extends React.Component {
               <NavLink
                 to="#home"
                 className="menu-item"
-                activeclassName="active"
+                activeclassname="active"
                 smooth={true}
               >
                 home
@@ -57,7 +57,7 @@ class Header extends React.Component {
               <NavLink
                 to="#about"
                 className="menu-item"
-                activeclassName="active"
+                activeclassname="active"
                 smooth={true}
               >
                 about
@@ -67,7 +67,7 @@ class Header extends React.Component {
               <NavLink
                 to="#products"
                 className="menu-item"
-                activeclassName="active"
+                activeclassname="active"
                 smooth={true}
               >
                 products
@@ -77,7 +77,7 @@ class Header extends React.Component {
               <NavLink
                 to="#services"
                 className="menu-item"
-                activeclassName="active"
+                activeclassname="active"
                 smooth={true}
               >
                 services
@@ -87,7 +87,7 @@ class Header extends React.Component {
               <NavLink
                 to="#contact"
                 className="menu-item"
-                activeclassName="active"
+                activeclassname="active"
                 smooth={true}
               >
                 contact

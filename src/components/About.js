@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import VisibilitySensor from "react-visibility-sensor";
 
-import goldenhorn_banner from "../images/goldenhorn_banner.png";
+// import goldenhorn_banner from "../images/goldenhorn_banner.png";
 import tac_egitim from "../images/tac_egitim.jpg";
 import benefit from "../images/benefit.png";
 import expert from "../images/expert.png";
@@ -20,7 +20,6 @@ const About = () => {
   const [animateContentsTop, setAnimateContentsTop] = useState("");
   const [animateContentsMiddle, setAnimateContentsMiddle] = useState("");
   const [animateContentsBottom, setAnimateContentsBottom] = useState("");
-  const [animateBar, setAnimateBar] = useState("");
 
   const onChangeHeader = isVisible => {
     if (isVisible) {
@@ -44,7 +43,6 @@ const About = () => {
     if (isVisible) {
       setAnimateInfoTop("animated slideIn-left");
       setAnimateContentsTop("animated slideIn-right");
-      setAnimateBar("animated bar");
     }
   };
 
@@ -52,7 +50,6 @@ const About = () => {
     if (isVisible) {
       setAnimateInfoMiddle("animated slideIn-right");
       setAnimateContentsMiddle("animated slideIn-left");
-      setAnimateBar("animated bar");
     }
   };
 
@@ -60,7 +57,6 @@ const About = () => {
     if (isVisible) {
       setAnimateInfoBottom("animated slideIn-left");
       setAnimateContentsBottom("animated slideIn-right");
-      setAnimateBar("animated bar");
     }
   };
 

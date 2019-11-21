@@ -31,7 +31,7 @@ const Products = () => {
             <div className="card"></div>
             <div className="product-text">
               <div className="bold">GLDNHRN</div>
-              <span class="product-highlight">Business Solution</span>
+              <span className="product-highlight">Business Solution</span>
             </div>
             <div className="product-button">LEARN MORE</div>
           </div>
@@ -41,7 +41,7 @@ const Products = () => {
             <div className="card"></div>
             <div className="product-text">
               <div className="bold">Lookout Eyes</div>
-              <span class="product-highlight">Network Solution</span>
+              <span className="product-highlight">Network Solution</span>
             </div>
             <div className="product-button">LEARN MORE</div>
           </div>
@@ -51,7 +51,7 @@ const Products = () => {
             <div className="card"></div>
             <div className="product-text">
               <div className="bold">CONIG</div>
-              <span class="product-highlight">Business Process</span>
+              <span className="product-highlight">Business Process</span>
             </div>
             <div className="product-button">LEARN MORE</div>
           </div>
