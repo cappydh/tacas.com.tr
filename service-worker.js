@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tacas.com.tr/precache-manifest.bbe157c15072a7f4c851d9609df006b6.js"
+  "/tacas.com.tr/precache-manifest.d32bb2e0feaa2775d9ee11eb4cd0c6cd.js"
 );
 
 self.addEventListener('message', (event) => {

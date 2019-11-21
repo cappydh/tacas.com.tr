@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0bad673bb34aa98a59a2875710e15571",
+    "revision": "e276d7978cdf655f6c4b5aac1c674d24",
     "url": "/tacas.com.tr/index.html"
   },
   {
-    "revision": "3ffc76700fe0d21193b1",
-    "url": "/tacas.com.tr/static/css/main.170f87d9.chunk.css"
+    "revision": "47c66945e8fad7212641",
+    "url": "/tacas.com.tr/static/css/main.e8171692.chunk.css"
   },
   {
-    "revision": "079e414094e5fecfc083",
-    "url": "/tacas.com.tr/static/js/2.7566b9bd.chunk.js"
+    "revision": "ca815bd027c9f4b52bc7",
+    "url": "/tacas.com.tr/static/js/2.5b13d7d4.chunk.js"
   },
   {
-    "revision": "3ffc76700fe0d21193b1",
-    "url": "/tacas.com.tr/static/js/main.285095e9.chunk.js"
+    "revision": "47c66945e8fad7212641",
+    "url": "/tacas.com.tr/static/js/main.46de9561.chunk.js"
   },
   {
     "revision": "f7e1092d852c37fbac5f",
