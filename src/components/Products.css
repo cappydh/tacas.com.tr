@@ -112,6 +112,91 @@
   animation: slideUp 0.3s ease forwards;
 }
 
+.product-modal {
+  width: 35%;
+  height: 75%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 55px;
+  right: 0;
+  border: solid black;
+  overflow: hidden;
+  background-color: white;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-project-name {
+  font-family: "Raleway-bold";
+  margin: 10px 10px 0 15px;
+  font-size: 22pt;
+  color: #444;
+}
+
+.modal-project-category {
+  font-family: "Raleway-bold";
+  margin: 0 10px 0 15px;
+  padding-bottom: 15px;
+  font-size: 12pt;
+  color: #c0c0c0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-project-description {
+  font-family: "Raleway";
+  margin: 15px 10px 0 15px;
+  padding-bottom: 15px;
+  font-size: 11pt;
+  line-height: 18pt;
+  color: #444;
+}
+
+.modal-button {
+  color: white;
+  border: solid #e63946 2px;
+  background-color: #e63946;
+  padding: 8px 30px 8px 30px;
+  font-size: 13pt;
+  line-height: 18pt;
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  text-transform: uppercase;
+  z-index: 2;
+  left: 15px;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+
+.modal-button:hover {
+  background-color: white;
+  border-color: white;
+  color: #e63946;
+}
+
+.linkicon {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  display: inline-block;
+}
+
+.modal-link {
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.modal-button:hover .modal-link {
+  color: #e63946;
+}
+
 @keyframes fadeOut {
   0% {
     opacity: 1;
