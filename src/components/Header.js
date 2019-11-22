@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-concat */
 import React from "react";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 

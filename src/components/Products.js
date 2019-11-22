@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-concat */
 import React, { useState } from "react";
 import VisibilitySensor from "react-visibility-sensor";
 
@@ -28,7 +29,6 @@ const Products = () => {
       <div className={"product-gallery" + " " + animateGalery}>
         <div className="product">
           <div>
-            <div className="card"></div>
             <div className="product-text">
               <div className="bold">GLDNHRN</div>
               <span className="product-highlight">Business Solution</span>
@@ -38,7 +38,6 @@ const Products = () => {
         </div>
         <div className="product">
           <div>
-            <div className="card"></div>
             <div className="product-text">
               <div className="bold">Lookout Eyes</div>
               <span className="product-highlight">Network Solution</span>
@@ -48,7 +47,6 @@ const Products = () => {
         </div>
         <div className="product">
           <div>
-            <div className="card"></div>
             <div className="product-text">
               <div className="bold">CONIG</div>
               <span className="product-highlight">Business Process</span>

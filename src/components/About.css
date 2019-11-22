@@ -83,7 +83,7 @@
 
 .about {
   line-height: 18pt;
-  padding: 100px 0 130px 0;
+  padding: 100px 0 0 0;
   color: #616161;
   background-color: white;
 }
@@ -218,7 +218,7 @@
 }
 
 .highlight-title {
-  color: #ff686b;
+  color: #b12028;
 }
 
 .content {
