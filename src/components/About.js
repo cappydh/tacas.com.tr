@@ -186,7 +186,7 @@ const About = () => {
           <img className="info-image" src={tac_egitim} alt="info" />
         </div>
       </div>
-      <div className="info">
+      <div className="info" style={{ paddingBottom: "100px" }}>
         <div className={"info-detail" + " " + animateInfoBottom}>
           <img className="info-image" src={tac_egitim} alt="info" />
         </div>

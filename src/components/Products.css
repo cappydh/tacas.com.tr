@@ -3,6 +3,12 @@
   src: url("../fonts/Raleway-SemiBold.ttf");
 }
 
+@media only screen and (max-width: 768px) {
+  .product-gallery {
+    flex-direction: column !important;
+  }
+}
+
 .products {
   line-height: 18pt;
   padding: 100px 0 130px 0;
@@ -113,64 +119,81 @@
 }
 
 .product-modal {
-  width: 35%;
-  height: 75%;
+  max-width: 700px;
+  top: 10%;
+  position: relative;
   overflow: auto;
   margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 55px;
-  right: 0;
-  border: solid black;
   overflow: hidden;
+  align-items: flex-start;
+  text-align: left;
+  box-sizing: border-box;
+  color: #333;
   background-color: white;
-  animation: fadeIn 0.5s ease forwards;
+  animation: openModal 0.5s ease forwards;
+}
+
+.modal-html {
+  overflow: hidden;
+}
+
+.close-modal {
+  animation: closeModal 0.3s ease forwards;
+}
+
+.modal-image-container {
+  height: 450px;
 }
 
 .modal-img {
-  width: 100%;
+  max-height: 450px;
+  display: block;
+  margin: 0 auto;
 }
 
-.modal-project-name {
-  font-family: "Raleway-bold";
-  margin: 10px 10px 0 15px;
-  font-size: 22pt;
+.modal-info {
+  padding: 35px 60px 90px 25px;
+  border-top: 3px solid #1b242f;
+  box-sizing: border-box;
   color: #444;
 }
 
-.modal-project-category {
+.modal-title {
+  font-size: 22pt;
+  line-height: 30pt;
   font-family: "Raleway-bold";
-  margin: 0 10px 0 15px;
-  padding-bottom: 15px;
-  font-size: 12pt;
-  color: #c0c0c0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.modal-project-description {
-  font-family: "Raleway";
-  margin: 15px 10px 0 15px;
+.modal-tag {
+  display: block;
+  font-weight: 300;
+  color: #c0c0c0;
+  font-family: "Raleway-bold";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 15px;
   font-size: 11pt;
+}
+
+.modal-description {
+  font-size: 11pt;
   line-height: 18pt;
-  color: #444;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .modal-button {
   color: white;
-  border: solid #e63946 2px;
   background-color: #e63946;
   padding: 8px 30px 8px 30px;
-  font-size: 13pt;
+  font-size: 11pt;
   line-height: 18pt;
   cursor: pointer;
-  position: absolute;
-  bottom: 15px;
+  bottom: 20px;
+  left: 15px;
   text-transform: uppercase;
   z-index: 2;
-  left: 15px;
-  font-family: "Raleway", sans-serif;
+  position: absolute;
+  font-family: "Raleway-semibold";
   transition: all 0.4s ease-in-out;
 }
 
@@ -182,8 +205,8 @@
 
 .linkicon {
   position: absolute;
-  left: 5px;
-  top: 10px;
+  left: 10px;
+  top: 11px;
   display: inline-block;
 }
 
@@ -195,6 +218,28 @@
 
 .modal-button:hover .modal-link {
   color: #e63946;
+}
+
+@keyframes openModal {
+  0% {
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    width: 700px;
+    height: 750px;
+  }
+}
+
+@keyframes closeModal {
+  0% {
+    width: 700px;
+    height: 750px;
+  }
+  100% {
+    width: 0%;
+    height: 0%;
+  }
 }
 
 @keyframes fadeOut {

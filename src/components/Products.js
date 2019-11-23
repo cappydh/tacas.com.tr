@@ -2,11 +2,9 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import VisibilitySensor from "react-visibility-sensor";
-import { FiExternalLink } from "react-icons/fi";
-
-import img1 from "../images/gldnhrn_02.png";
-import img2 from "../images/fit_dg2.JPG";
-import img3 from "../images/tac_egitim.jpg";
+import Goldenhorn from "./products/Goldenhorn";
+import LookoutEyes from "./products/LookoutEyes";
+import Conig from "./products/Conig";
 
 import "./Products.css";
 
@@ -14,14 +12,38 @@ const Products = () => {
   const [animateHeader, setAnimateHeader] = useState("");
   const [animateGalery, setAnimateGalery] = useState("");
 
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [animateCloseModal, setAnimateCloseModal] = useState("");
 
-  function handleOpenModal() {
-    setIsOpen(true);
+  const [modalIsOpenGldnhrn, setIsOpenGldnhrn] = useState(false);
+  const [modalIsOpenLOE, setIsOpenLOE] = useState(false);
+  const [modalIsOpenConig, setIsOpenConig] = useState(false);
+
+  function handleOpenModalGldnhrn() {
+    setIsOpenGldnhrn(true);
+    setAnimateCloseModal("");
+  }
+
+  function handleOpenModalLOE() {
+    setIsOpenLOE(true);
+    setAnimateCloseModal("");
+  }
+
+  function handleOpenModalConig() {
+    setIsOpenConig(true);
+    setAnimateCloseModal("");
   }
 
   function handleCloseModal() {
-    setIsOpen(false);
+    setIsOpenGldnhrn(false);
+    setIsOpenLOE(false);
+    setIsOpenConig(false);
+  }
+
+  function onRequestClose() {
+    setIsOpenGldnhrn(false);
+    setIsOpenLOE(false);
+    setIsOpenConig(false);
+    setAnimateCloseModal("close-modal");
   }
 
   const onChangeHeader = isVisible => {
@@ -30,6 +52,8 @@ const Products = () => {
       setAnimateGalery("animated slideUp");
     }
   };
+
+  Modal.setAppElement("#root");
 
   return (
     <div id="products" className="products">
@@ -49,33 +73,18 @@ const Products = () => {
               <div className="bold">GLDNHRN</div>
               <span className="product-highlight">Business Solution</span>
             </div>
-            <div className="product-button" onClick={handleOpenModal}>
+            <div className="product-button" onClick={handleOpenModalGldnhrn}>
               LEARN MORE
             </div>
             <Modal
-              isOpen={modalIsOpen}
+              isOpen={modalIsOpenGldnhrn}
               onRequestClose={handleCloseModal}
-              className="product-modal"
+              className={"product-modal" + " " + animateCloseModal}
+              onRequestClose={() => onRequestClose()}
+              closeTimeoutMS={300}
+              htmlOpenClassName="modal-html"
             >
-              <img src={img1} alt="img1" className="modal-img" />
-              <p className="modal-project-name">GLDNHRN</p>
-              <p className="modal-project-category">Business Solution</p>
-              <p className="modal-project-description">
-                GLDNHRN is a powerful and comprehensive solution for business
-                process and dynamic case management, which helps organizations
-                to make better-informed decisions about business processes and
-                dynamic cases
-              </p>
-              <div className="modal-button">
-                <FiExternalLink className="linkicon" />
-                <a
-                  className="modal-link"
-                  target="_blank"
-                  href="https://www.gldnhrn.com/index.php"
-                >
-                  VIEW SITE
-                </a>
-              </div>
+              <Goldenhorn />
             </Modal>
           </div>
         </div>
@@ -85,8 +94,20 @@ const Products = () => {
               <div className="bold">Lookout Eyes</div>
               <span className="product-highlight">Network Solution</span>
             </div>
-            <div className="product-button">LEARN MORE</div>
+            <div className="product-button" onClick={handleOpenModalLOE}>
+              LEARN MORE
+            </div>
           </div>
+          <Modal
+            isOpen={modalIsOpenLOE}
+            onRequestClose={handleCloseModal}
+            className={"product-modal" + " " + animateCloseModal}
+            onRequestClose={() => onRequestClose()}
+            closeTimeoutMS={300}
+            htmlOpenClassName="modal-html"
+          >
+            <LookoutEyes />
+          </Modal>
         </div>
         <div className="product">
           <div>
@@ -94,8 +115,20 @@ const Products = () => {
               <div className="bold">CONIG</div>
               <span className="product-highlight">Business Process</span>
             </div>
-            <div className="product-button">LEARN MORE</div>
+            <div className="product-button" onClick={handleOpenModalConig}>
+              LEARN MORE
+            </div>
           </div>
+          <Modal
+            isOpen={modalIsOpenConig}
+            onRequestClose={handleCloseModal}
+            className={"product-modal" + " " + animateCloseModal}
+            onRequestClose={() => onRequestClose()}
+            closeTimeoutMS={300}
+            htmlOpenClassName="modal-html"
+          >
+            <Conig />
+          </Modal>
         </div>
       </div>
     </div>

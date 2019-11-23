@@ -76,16 +76,6 @@ class Header extends React.Component {
             </li>
             <li>
               <NavLink
-                to="#services"
-                className="menu-item"
-                activeclassname="active"
-                smooth={true}
-              >
-                services
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
                 to="#contact"
                 className="menu-item"
                 activeclassname="active"

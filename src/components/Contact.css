@@ -25,7 +25,7 @@ svg#bigTriangleColor {
 }
 
 #bigTriangleColor path {
-  fill: white;
-  stroke: white;
+  fill: #e5e5e5;
+  stroke: #e5e5e5;
   stroke-width: 2;
 }

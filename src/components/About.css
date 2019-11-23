@@ -8,6 +8,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .about {
+    margin-bottom: 150px !important;
+  }
   .container {
     padding: 0 !important;
   }
@@ -43,6 +46,7 @@
     flex-direction: column !important;
     padding-bottom: 150px;
   }
+
   .info-detail {
     max-width: 90% !important;
     width: 0 !important;
@@ -185,7 +189,7 @@
   align-items: center;
   text-align: center;
   position: relative;
-  margin: 100px auto 100px auto;
+  margin: 100px auto auto auto;
   display: flex;
   visibility: hidden;
 }
