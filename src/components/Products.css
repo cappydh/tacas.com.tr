@@ -7,6 +7,21 @@
   .product-gallery {
     flex-direction: column !important;
   }
+
+  .product-gallery .product:nth-child(1) {
+    background-size: 75% 50% !important;
+    width: 340px !important;
+  }
+
+  .product-gallery .product:nth-child(2) {
+    background-size: 75% 50% !important;
+    width: 340px !important;
+  }
+
+  .product-gallery .product:nth-child(3) {
+    background-size: 75% 75% !important;
+    width: 340px !important;
+  }
 }
 
 .products {
