@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "67bafb0e6d49256dddd0a14542e718b3",
+    "revision": "253f1bc163cb91be1d786a86400c3382",
     "url": "/tacas.com.tr/index.html"
   },
   {
-    "revision": "5025270da3d3a6b1ac8e",
-    "url": "/tacas.com.tr/static/css/main.d50e0514.chunk.css"
+    "revision": "b9c979df3ac52bdf245a",
+    "url": "/tacas.com.tr/static/css/main.2bee3b4b.chunk.css"
   },
   {
-    "revision": "41854d8da6920c49a899",
-    "url": "/tacas.com.tr/static/js/2.c66abd2d.chunk.js"
+    "revision": "8956fb7c9b77fd15dc17",
+    "url": "/tacas.com.tr/static/js/2.d5f22123.chunk.js"
   },
   {
-    "revision": "5025270da3d3a6b1ac8e",
-    "url": "/tacas.com.tr/static/js/main.35919894.chunk.js"
+    "revision": "b9c979df3ac52bdf245a",
+    "url": "/tacas.com.tr/static/js/main.bf99409e.chunk.js"
   },
   {
     "revision": "f7e1092d852c37fbac5f",
@@ -44,16 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tacas.com.tr/static/media/bg4.a8f941b3.jpg"
   },
   {
+    "revision": "349b2368d8fce1c20563ca9a3de1687a",
+    "url": "/tacas.com.tr/static/media/conig.349b2368.png"
+  },
+  {
     "revision": "3822d6c20947dcae3e87011dce71ff5a",
     "url": "/tacas.com.tr/static/media/conig2.3822d6c2.png"
   },
   {
     "revision": "0ea946334d4cccb6f8f1b6ff479dbec0",
     "url": "/tacas.com.tr/static/media/expert.0ea94633.png"
-  },
-  {
-    "revision": "efd5ac8a4ca98a5bd3b6836db64f61cf",
-    "url": "/tacas.com.tr/static/media/fit_dg2.efd5ac8a.JPG"
   },
   {
     "revision": "56716ebc0c19ff9a16296100ae01d785",
