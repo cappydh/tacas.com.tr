@@ -33,12 +33,6 @@ const Products = () => {
     setAnimateCloseModal("");
   }
 
-  function handleCloseModal() {
-    setIsOpenGldnhrn(false);
-    setIsOpenLOE(false);
-    setIsOpenConig(false);
-  }
-
   function onRequestClose() {
     setIsOpenGldnhrn(false);
     setIsOpenLOE(false);
@@ -78,7 +72,6 @@ const Products = () => {
             </div>
             <Modal
               isOpen={modalIsOpenGldnhrn}
-              onRequestClose={handleCloseModal}
               className={"product-modal" + " " + animateCloseModal}
               onRequestClose={() => onRequestClose()}
               closeTimeoutMS={300}
@@ -100,7 +93,6 @@ const Products = () => {
           </div>
           <Modal
             isOpen={modalIsOpenLOE}
-            onRequestClose={handleCloseModal}
             className={"product-modal" + " " + animateCloseModal}
             onRequestClose={() => onRequestClose()}
             closeTimeoutMS={300}
@@ -121,7 +113,6 @@ const Products = () => {
           </div>
           <Modal
             isOpen={modalIsOpenConig}
-            onRequestClose={handleCloseModal}
             className={"product-modal" + " " + animateCloseModal}
             onRequestClose={() => onRequestClose()}
             closeTimeoutMS={300}
