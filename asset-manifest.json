@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tacas.com.tr/static/css/main.2bee3b4b.chunk.css",
+    "main.css": "/tacas.com.tr/static/css/main.0c5a13e6.chunk.css",
     "main.js": "/tacas.com.tr/static/js/main.bf99409e.chunk.js",
     "main.js.map": "/tacas.com.tr/static/js/main.bf99409e.chunk.js.map",
     "runtime-main.js": "/tacas.com.tr/static/js/runtime-main.d8fca28c.js",
@@ -8,9 +8,9 @@
     "static/js/2.d5f22123.chunk.js": "/tacas.com.tr/static/js/2.d5f22123.chunk.js",
     "static/js/2.d5f22123.chunk.js.map": "/tacas.com.tr/static/js/2.d5f22123.chunk.js.map",
     "index.html": "/tacas.com.tr/index.html",
-    "precache-manifest.92d483ccc179acc9dca39d4cdf49d743.js": "/tacas.com.tr/precache-manifest.92d483ccc179acc9dca39d4cdf49d743.js",
+    "precache-manifest.78b389c2037915396ff27210cc5b8466.js": "/tacas.com.tr/precache-manifest.78b389c2037915396ff27210cc5b8466.js",
     "service-worker.js": "/tacas.com.tr/service-worker.js",
-    "static/css/main.2bee3b4b.chunk.css.map": "/tacas.com.tr/static/css/main.2bee3b4b.chunk.css.map",
+    "static/css/main.0c5a13e6.chunk.css.map": "/tacas.com.tr/static/css/main.0c5a13e6.chunk.css.map",
     "static/media/About.css": "/tacas.com.tr/static/media/Raleway-Bold.575e4317.ttf",
     "static/media/index.css": "/tacas.com.tr/static/media/Raleway-Regular.580d0778.ttf",
     "static/media/Footer.css": "/tacas.com.tr/static/media/Raleway-SemiBold.17ba6410.ttf",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.d8fca28c.js",
     "static/js/2.d5f22123.chunk.js",
-    "static/css/main.2bee3b4b.chunk.css",
+    "static/css/main.0c5a13e6.chunk.css",
     "static/js/main.bf99409e.chunk.js"
   ]
 }
